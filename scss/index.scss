@@ -12,6 +12,9 @@ $center-center: center;
 $background-dodgerblue: dodgerblue;
 $mycursor: pointer;
 $color-white: #fff;
+$font-family-font: 'Poppins', sans-serif;
+$display-flex: flex;
+$flex-wrap: wrap;
 
 *{
     margin: $margin-zero;
@@ -48,14 +51,14 @@ section{
     margin: $margin-auto;
 }
 .about, .services, .skills, .teams, .contact, footer{
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-family-font;
 }
 .about .about-content, 
 .services .serv-content,
 .skills .skills-content,
 .contact .contact-content{
-    display: flex;
-    flex-wrap: wrap;
+    display: $display-flex;
+    flex-wrap: $flex-wrap;
     align-items: $center-center;
     justify-content: space-between;
 }
@@ -104,7 +107,7 @@ section .title::after{
     background: $background-dodgerblue;
 }
 .navbar .max-width{
-    display: flex;
+    display: $display-flex;
     align-items: $center-center;
     justify-content: space-between;
 }
@@ -172,4 +175,55 @@ section .title::after{
 }
 .scroll-up-btn:hover{
     filter: brightness(90%);
+}
+
+/* home section styling */
+.home{
+    display: flex;
+    background: url("../banner4.jpg") no-repeat center;
+    height: 100vh;
+    color: $color-white;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+
+    .max-width{
+        margin: auto 0 auto 30px;
+    }
+
+    .home-content {
+        .text-1{
+            font-size: 27px;
+        }
+        .text-2{
+            font-size: 75px;
+            font-weight: 600;
+            margin-left: -3px;
+        }
+        .text-3{
+            font-size: 40px;
+            margin: 5px 0;
+        }
+        .text-3 span{
+            color: $background-dodgerblue;
+            font-weight: 500;
+        }
+        a{
+            display: inline-block;
+            background: $background-dodgerblue;
+            color: $color-white;
+            font-size: 25px;
+            padding: 12px 36px;
+            margin-top: 20px;
+            font-weight: 400;
+            border-radius: 6px;
+            border: 2px solid $background-dodgerblue;
+            transition: all 0.3s ease;
+        }
+        a:hover{
+            color: $background-dodgerblue;
+            background: $text-decoration-none;
+        }
+    }
 }
