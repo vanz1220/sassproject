@@ -15,6 +15,9 @@ $color-white: #fff;
 $font-family-font: 'Poppins', sans-serif;
 $display-flex: flex;
 $flex-wrap: wrap;
+$font-family-ubuntu: 'Ubuntu', sans-serif;
+$height-45: 45px;
+$font-weight-500: 500;
 
 *{
     margin: $margin-zero;
@@ -66,10 +69,10 @@ section .title{
     position: $position-realtive;
     text-align: $center-center;
     font-size: 40px;
-    font-weight: 500;
+    font-weight: $font-weight-500;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $font-family-ubuntu;
 }
 section .title::before{
     content: "";
@@ -98,7 +101,7 @@ section .title::after{
     width: 100%;
     z-index: 999;
     padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $font-family-ubuntu;
     transition: all 0.3s ease;
     background-color: rgba(17, 17, 17, 0.719);
 }
@@ -131,7 +134,7 @@ section .title::after{
     display: block;
     color: $color-white;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: $font-weight-500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
@@ -151,13 +154,13 @@ section .title::after{
 }
 .scroll-up-btn{
     position: $position-fixed;
-    height: 45px;
+    height: $height-45;
     width: 42px;
     background:$background-dodgerblue;
     right: 30px;
     bottom: 10px;
     text-align: $center-center;
-    line-height: 45px;
+    line-height: $height-45;
     color: $color-white;
     z-index: 9999;
     font-size: 30px;
@@ -179,14 +182,14 @@ section .title::after{
 
 /* home section styling */
 .home{
-    display: flex;
+    display: $display-flex;
     background: url("../banner4.jpg") no-repeat center;
     height: 100vh;
     color: $color-white;
     min-height: 500px;
     background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
+    background-attachment: $position-fixed;
+    font-family: $font-family-ubuntu;
 
     .max-width{
         margin: auto 0 auto 30px;
@@ -207,7 +210,7 @@ section .title::after{
         }
         .text-3 span{
             color: $background-dodgerblue;
-            font-weight: 500;
+            font-weight: $font-weight-500;
         }
         a{
             display: inline-block;
