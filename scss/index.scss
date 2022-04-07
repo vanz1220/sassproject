@@ -22,6 +22,7 @@ $font-weight-500: 500;
 $text-decoration-underline: underline;
 $widthheight: 100%;
 $tenpx: 10px;
+$space-between: space-between;
 
 *{
     margin: $margin-zero;
@@ -67,7 +68,7 @@ section{
     display: $display-flex;
     flex-wrap: $flex-wrap;
     align-items: $center-center;
-    justify-content: space-between;
+    justify-content: $space-between;
 }
 section .title{
     position: $position-realtive;
@@ -116,7 +117,7 @@ section .title::after{
 .navbar .max-width{
     display: $display-flex;
     align-items: $center-center;
-    justify-content: space-between;
+    justify-content: $space-between;
 }
 .navbar .logo a{
     color: $color-white;
@@ -274,10 +275,10 @@ section .title::after{
         margin-bottom: 15px;
     }
     .skills-content .right .info{
-        display: flex;
+        display: $display-flex;
         margin-bottom: 5px;
         align-items: center;
-        justify-content: space-between;
+        justify-content: $space-between;
     }
     .skills-content .right span{
         font-weight: $font-weight-500;
@@ -335,7 +336,7 @@ section .title::after{
             margin: $tenpx 0;
         }
         .row{
-            display: flex;
+            display: $display-flex;
             height: 65px;
             align-items: center;
         }
@@ -354,7 +355,7 @@ section .title::after{
         }
     } 
     .right form .fields{
-        display: flex;
+        display: $display-flex;
     }
     .right form .field,
     .right form .fields .field{
