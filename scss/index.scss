@@ -53,11 +53,17 @@ html{
 section{
     padding: $section-padding;
 }
+.about{
+    padding: 10px 0;
+}
+
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
     margin: $margin-auto;
 }
+
+
 .about, .services, .skills, .teams, .contact, footer{
     font-family: $font-family-font;
 }
@@ -296,7 +302,7 @@ section .title::after{
         height: $widthheight;
         left: 0;
         top: 0;
-        background: darkblue;
+        background: $background-dodgerblue  ;
     }
     .skills-content .right .html::before{
         width: 90%;

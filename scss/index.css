@@ -32,6 +32,10 @@ section {
   padding: 100px 0;
 }
 
+.about {
+  padding: 10px 0;
+}
+
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
@@ -331,7 +335,7 @@ section .title::after {
   height: 100%;
   left: 0;
   top: 0;
-  background: darkblue;
+  background: dodgerblue;
 }
 
 .skills .skills-content .right .html::before {
