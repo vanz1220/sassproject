@@ -339,19 +339,19 @@ section .title::after {
 }
 
 .skills .skills-content .right .css::before {
-  width: 70%;
+  width: 80%;
 }
 
 .skills .skills-content .right .js::before {
-  width: 70%;
+  width: 75%;
 }
 
 .skills .skills-content .right .php::before {
-  width: 90%;
+  width: 85%;
 }
 
 .skills .skills-content .right .mysql::before {
-  width: 90%;
+  width: 85%;
 }
 
 /* contact section styling */
