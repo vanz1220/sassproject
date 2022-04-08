@@ -347,6 +347,7 @@ section .title::after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   height: 250px;
+  font-size: small;
 }
 
 .services .title::after {
@@ -479,19 +480,19 @@ section .title::after {
 }
 
 .skills-content .right .css::before {
-  width: 60%;
-}
-
-.skills-content .right .js::before {
   width: 80%;
 }
 
+.skills-content .right .js::before {
+  width: 75%;
+}
+
 .skills-content .right .php::before {
-  width: 50%;
+  width: 85%;
 }
 
 .skills-content .right .mysql::before {
-  width: 70%;
+  width: 85%;
 }
 
 /* teams section styling */

@@ -282,6 +282,7 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
     height: 250px;
+    font-size: small;
 }
 .services .title::after {
     color: dodgerblue;
@@ -383,16 +384,16 @@ section .title::after{
     width: 90%;
 }
 .skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
     width: 80%;
 }
+.skills-content .right .js::before{
+    width: 75%;
+}
 .skills-content .right .php::before{
-    width: 50%;
+    width: 85%;
 }
 .skills-content .right .mysql::before{
-    width: 70%;
+    width: 85%;
 }
 
 /* teams section styling */
@@ -672,6 +673,7 @@ footer span a:hover{
     .services .title::after, .teams .title::after {
         font-size: small;
     }
+    
 }
 @media (max-width: 780px){
     section{
