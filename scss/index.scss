@@ -271,7 +271,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what I know and what I do";
+    content: "Services I Offer";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -281,6 +281,7 @@ section .title::after{
     padding: 20px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    height: 250px;
 }
 .services .title::after {
     color: dodgerblue;
@@ -307,7 +308,18 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+.rotateY:hover {
+	transform               : rotate(360deg);
+	-moz-transform          : rotate(360deg);
+	-webkit-transform       : rotate(360deg);
+	transform-origin        : center;
+	-moz-transform-origin   : center;
+	-webkit-transform-origin: center;
 
+	transition              : transform 1.0s ease all;
+	-moz-transition         : -moz-transform 1.0s ease all;
+	-webkit-transition      : -webkit-transform 1.0s ease all;
+}
 /* skills section styling */
 
 .skills .title::after{
