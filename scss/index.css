@@ -1,3 +1,5 @@
+/*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +18,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #fff;
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -32,10 +34,6 @@ section {
   padding: 100px 0;
 }
 
-.about {
-  padding: 10px 0;
-}
-
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
@@ -43,7 +41,7 @@ section {
 }
 
 .about, .services, .skills, .teams, .contact, footer {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .about .about-content,
@@ -70,7 +68,7 @@ section .title {
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 section .title::before {
@@ -103,7 +101,7 @@ section .title::after {
   width: 100%;
   z-index: 999;
   padding: 30px 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: rgba(17, 17, 17, 0.719);
@@ -129,7 +127,7 @@ section .title::after {
 .navbar .logo a {
   color: #fff;
   font-size: 35px;
-  font-weight: calc($font-weight-500 + 100);
+  font-weight: 600;
 }
 
 .navbar .logo a span {
@@ -210,13 +208,13 @@ section .title::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url("../image/banner4.jpg") no-repeat center;
+  background: url("/image/banner4.jpg") no-repeat center;
   height: 100vh;
   color: #fff;
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .home .max-width {
@@ -229,7 +227,7 @@ section .title::after {
 
 .home .home-content .text-2 {
   font-size: 75px;
-  font-weight: calc($font-weight-500 + 100);
+  font-weight: 600;
   margin-left: -3px;
 }
 
@@ -239,7 +237,7 @@ section .title::after {
 }
 
 .home .home-content .text-3 span {
-  color: yellow;
+  color: dodgerblue;
   font-weight: 500;
 }
 
@@ -262,6 +260,123 @@ section .title::after {
   background: none;
 }
 
+/* about section styling */
+.about .title::after {
+  content: "who i am";
+}
+
+.about .about-content .left {
+  width: 45%;
+}
+
+.about .about-content .left img {
+  height: 400px;
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+
+.about .about-content .right {
+  width: 55%;
+}
+
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+  color: darkblue;
+}
+
+.about .about-content .right p {
+  text-align: justify;
+}
+
+.about .about-content .right a {
+  display: inline-block;
+  background: #323ccd;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid darkblue;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+  color: #323ccd;
+  background: none;
+}
+
+/* services section styling */
+.services, .teams {
+  color: #fff;
+  background: #111;
+}
+
+.services .title::before,
+.teams .title::before {
+  background: #fff;
+}
+
+.services .title::after,
+.teams .title::after {
+  background: #111;
+  content: "what I know and what I do";
+}
+
+.services .serv-content .card {
+  width: calc(33% - 20px);
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.services .title::after {
+  color: dodgerblue;
+}
+
+.services .serv-content .card:hover {
+  background: dodgerblue;
+}
+
+.services .serv-content .card .box {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.services .serv-content .card i {
+  font-size: 50px;
+  color: dodgerblue;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i {
+  color: #fff;
+}
+
+.services .serv-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
 /* skills section styling */
 .skills .title::after {
   content: "what i know";
@@ -273,7 +388,7 @@ section .title::after {
 
 .skills .skills-content .left .text {
   font-size: 20px;
-  font-weight: calc($font-weight-500 + 100);
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
@@ -335,27 +450,116 @@ section .title::after {
   height: 100%;
   left: 0;
   top: 0;
-  background: dodgerblue;
+  background: darkblue;
 }
 
-.skills .skills-content .right .html::before {
+.skills-content .right .html::before {
   width: 90%;
 }
 
-.skills .skills-content .right .css::before {
+.skills-content .right .css::before {
+  width: 60%;
+}
+
+.skills-content .right .js::before {
   width: 80%;
 }
 
-.skills .skills-content .right .js::before {
-  width: 75%;
+.skills-content .right .php::before {
+  width: 50%;
 }
 
-.skills .skills-content .right .php::before {
-  width: 85%;
+.skills-content .right .mysql::before {
+  width: 70%;
 }
 
-.skills .skills-content .right .mysql::before {
-  width: 85%;
+/* teams section styling */
+.teams .title::after {
+  content: "who with me";
+}
+
+.teams .carousel .card {
+  background: #222;
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover {
+  background: dodgerblue;
+}
+
+.teams .carousel .card .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover .box {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.teams .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+.teams .carousel .card img {
+  height: 150px;
+  width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid dodgerblue;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover img {
+  border-color: #fff;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid dodgerblue !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+  background: dodgerblue !important;
 }
 
 /* contact section styling */
@@ -369,7 +573,7 @@ section .title::after {
 
 .contact .contact-content .text {
   font-size: 20px;
-  font-weight: calc($font-weight-500 + 100);
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
@@ -434,7 +638,8 @@ section .title::after {
   margin-left: 10px;
 }
 
-.contact .right form .field input, .contact .right form .textarea textarea {
+.contact .right form .field input,
+.contact .right form .textarea textarea {
   height: 100%;
   width: 100%;
   border: 1px solid lightgrey;
@@ -465,7 +670,7 @@ section .title::after {
 .contact .right form .button button {
   width: 100%;
   height: 100%;
-  border: 2px solid #012d5a;
+  border: 2px solid dodgerblue;
   background: dodgerblue;
   color: #fff;
   outline: none;
@@ -497,5 +702,210 @@ footer span a {
 
 footer span a:hover {
   text-decoration: underline;
+}
+
+/* responsive media query start */
+@media (max-width: 1300px) {
+  .home .max-width {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1104px) {
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 947px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu.active {
+    left: 0;
+  }
+  .navbar .menu li {
+    display: block;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+  .home .home-content .text-2 {
+    font-size: 70px;
+  }
+  .home .home-content .text-3 {
+    font-size: 35px;
+  }
+  .home .home-content a {
+    font-size: 23px;
+    padding: 10px 30px;
+  }
+  .max-width {
+    max-width: 930px;
+  }
+  .about .about-content .column {
+    width: 100%;
+  }
+  .about .about-content .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .about .about-content .right {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+  .services .serv-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  .skills .skills-content .column,
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 690px) {
+  .max-width {
+    padding: 0 23px;
+  }
+  .home .home-content .text-2 {
+    font-size: 60px;
+  }
+  .home .home-content .text-3 {
+    font-size: 32px;
+  }
+  .home .home-content a {
+    font-size: 20px;
+  }
+  .services .serv-content .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .home .home-content .text-2 {
+    font-size: 50px;
+  }
+  .home .home-content .text-3 {
+    font-size: 27px;
+  }
+  .about .about-content .right .text,
+  .skills .skills-content .left .text {
+    font-size: 19px;
+  }
+  .contact .right form .fields {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .right form .name,
+  .contact .right form .email {
+    margin: 0;
+  }
+  .scroll-up-btn {
+    right: 15px;
+    bottom: 15px;
+    height: 38px;
+    width: 35px;
+    font-size: 23px;
+    line-height: 38px;
+  }
+}
+
+.wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10vh;
+}
+
+i {
+  padding: 0px 10px;
+}
+
+.wrapper i:nth-child(1) {
+  color: white;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all ease-in-out 150ms;
+  transition: all ease-in-out 150ms;
+}
+
+.wrapper i:nth-child(1):hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translate(0, -8);
+          transform: translate(0, -8);
+}
+
+.wrapper i:nth-child(2) {
+  color: #1DA1F2;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all ease-in-out 150ms;
+  transition: all ease-in-out 150ms;
+}
+
+.wrapper i:nth-child(2):hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translate(0, -8);
+          transform: translate(0, -8);
+}
+
+.wrapper i:nth-child(3) {
+  color: lightsalmon;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all ease-in-out 150ms;
+  transition: all ease-in-out 150ms;
+}
+
+.wrapper i:nth-child(3):hover {
+  margin-top: -10px;
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+  -webkit-transform: translate(0, -5);
+          transform: translate(0, -5);
 }
 /*# sourceMappingURL=index.css.map */
