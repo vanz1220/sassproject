@@ -31,7 +31,7 @@ html {
 
 /* all similar content styling codes */
 section {
-  padding: 100px 0;
+  padding: 5px 0;
 }
 
 .max-width {
@@ -109,7 +109,8 @@ section .title::after {
 
 .navbar.sticky {
   padding: 15px 0;
-  background: dodgerblue;
+  background: #111111;
+  position: fixed;
 }
 
 .navbar .max-width {
@@ -137,7 +138,7 @@ section .title::after {
 }
 
 .navbar.sticky .logo a span {
-  color: #fff;
+  color: dodgerblue;
 }
 
 .navbar .menu li {
@@ -729,16 +730,13 @@ footer span a:hover {
     display: block;
     z-index: 999;
   }
-  .menu-btn i.active:before {
-    content: "\f00d";
-  }
   .navbar .menu {
     position: fixed;
     height: 100vh;
     width: 100%;
     left: -100%;
     top: 0;
-    background: #111;
+    background: rgba(17, 17, 17, 0.88);
     text-align: center;
     padding-top: 80px;
     -webkit-transition: all 0.3s ease;
@@ -811,6 +809,12 @@ footer span a:hover {
   }
   .services .serv-content .card {
     width: 100%;
+  }
+}
+
+@media (max-width: 780px) {
+  section {
+    padding: 2px 0;
   }
 }
 
