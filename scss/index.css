@@ -31,7 +31,11 @@ html {
 
 /* all similar content styling codes */
 section {
-  padding: 5px 0;
+  padding: 20px 0;
+}
+
+.about {
+  padding: 0px 0;
 }
 
 .max-width {
@@ -216,6 +220,7 @@ section .title::after {
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
+  margin-top: -20px;
 }
 
 .home .max-width {
@@ -569,7 +574,7 @@ section .title::after {
 }
 
 .contact .contact-content .column {
-  width: calc(50% - 30px);
+  width: calc(50% - 22px);
 }
 
 .contact .contact-content .text {
@@ -809,6 +814,9 @@ footer span a:hover {
   }
   .services .serv-content .card {
     width: 100%;
+  }
+  .services .title::after, .teams .title::after {
+    font-size: small;
   }
 }
 
