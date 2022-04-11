@@ -259,18 +259,18 @@
                         <form action="#">
                             <div class="fields">
                                 <div class="field name">
-                                    <input type="text" placeholder="Name" required>
+                                    <input type="text" id="fname" placeholder="Name" required>
                                 </div>
                                 <div class="field email">
-                                    <input type="email" placeholder="Email" required>
+                                    <input type="email" id="email" placeholder="Email" required>
                                 </div>
                             </div>
                             <div class="field">
-                                <input type="text" placeholder="Subject" required>
+                                <input type="text" id="subject" placeholder="Subject" required>
                             </div>
                             <div class="field textarea">
                                 <!-- Due to more textarea, I got an error so I changed the tag name of this textarea into changeit. -->
-                                <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                                <textarea id="msg" cols="30" rows="10" placeholder="Message.." required></textarea>
                             </div>
                             <div class="button">
                                 <button type="submit">Send message</button>
@@ -291,5 +291,20 @@
             </div>
         </footer>
 </body>
-
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "ivan.ifliba@gmail.com",
+    Password : "Malong1220!4",
+    To : 'ivan.ifliba@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : document.getElementById("subject").value,
+    Body : document.getElementById("msg").value
+}).then(
+  message => alert(message)
+);
+    }
+</script>
 </html>
