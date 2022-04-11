@@ -256,7 +256,7 @@
                     <div class="column right">
                         <div class="text">
                             Message me</div>
-                        <form action="#">
+                        <form onsubmit="sendEmail(); reset();">
                             <div class="fields">
                                 <div class="field name">
                                     <input type="text" id="fname" placeholder="Name" required>
@@ -290,21 +290,22 @@
                 <a href="https://github.com/vanz1220"><i class="fa fa-2x fa-github-square"></i></a>
             </div>
         </footer>
-</body>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
     function sendEmail(){
         Email.send({
-    Host : "smtp.gmail.com",
+    Host : "smtp.elasticemail.com",
     Username : "ivan.ifliba@gmail.com",
-    Password : "Malong1220!4",
-    To : 'ivan.ifliba@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : document.getElementById("subject").value,
-    Body : document.getElementById("msg").value
+    Password : "055174F25350FE8B24900B2EEF39E5C21EAA",
+    To : document.getElementById("email").value,
+    From : "ivan.ifliba@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
 }).then(
   message => alert(message)
 );
     }
 </script>
+</body>
+
 </html>
