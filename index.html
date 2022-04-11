@@ -294,16 +294,16 @@
 <script>
     function sendEmail(){
         Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "ivan.ifliba@gmail.com",
-    Password : "055174F25350FE8B24900B2EEF39E5C21EAA",
-    To : document.getElementById("email").value,
-    From : "ivan.ifliba@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
+            Host : "smtp.elasticemail.com",
+            Username : "ivan.ifliba@gmail.com",
+            Password : "055174F25350FE8B24900B2EEF39E5C21EAA",
+            To : document.getElementById("email").value,
+            From : "ivan.ifliba@gmail.com",
+            Subject : document.getElementById("subject").value,
+            Body : document.getElementById("msg").value
+        }).then(
+        message => alert(message)
+        );
     }
 </script>
 </body>
