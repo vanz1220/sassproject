@@ -108,12 +108,12 @@ section .title::after {
   font-family: 'Ubuntu', sans-serif;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-color: rgba(0, 54, 147, 0.73);
+  background-color: rgba(8, 67, 168, 0.822);
 }
 
 .navbar.sticky {
   padding: 15px 0;
-  background: rgba(0, 54, 147, 0.73);
+  background: rgba(17, 17, 17, 0.623);
   position: fixed;
 }
 
