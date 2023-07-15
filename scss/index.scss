@@ -280,7 +280,7 @@ section .title::after{
     border-radius: 6px;
     padding: 20px 25px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 1.3s ease;
     height: 250px;
     font-size: small;
 }
@@ -393,6 +393,18 @@ section .title::after{
     width: 85%;
 }
 .skills-content .right .mysql::before{
+    width: 85%;
+}
+.skills-content .right .wp::before{
+    width: 95%;
+}
+.skills-content .right .elementor::before{
+    width: 95%;
+}
+.skills-content .right .divi::before{
+    width: 95%;
+}
+.skills-content .right .avada::before{
     width: 85%;
 }
 
