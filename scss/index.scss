@@ -88,7 +88,7 @@ section .title::after{
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
-    background-color: rgba(17, 17, 17, 0.719);
+    background-color: rgba(0, 54, 147, 0.788);
 }
 .navbar.sticky{
     padding: 15px 0;
@@ -603,7 +603,7 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background: rgb(0 54 147 / 72%);
+        background: rgba(17, 17, 17, 0.88);
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
