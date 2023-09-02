@@ -290,7 +290,7 @@
                     <div class="column right">
                         <div class="text">
                             Message me</div>
-                        <form onsubmit="sendEmail(); reset();">
+                        <form onsubmit="sendEmail(); reset(); return false;">
                             <div class="fields">
                                 <div class="field name">
                                     <input type="text" id="fname" placeholder="Name" required>
@@ -325,21 +325,21 @@
             </div>
         </footer>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-    function sendEmail(){
-        Email.send({
-            Host : "smtp.elasticemail.com",
-            Username : "ivan.ifliba@gmail.com",
-            Password : "055174F25350FE8B24900B2EEF39E5C21EAA",
-            To : document.getElementById("email").value,
-            From : "ivan.ifliba@gmail.com",
-            Subject : document.getElementById("subject").value,
-            Body : document.getElementById("msg").value
-        }).then(
-        message => alert(message)
-        );
-    }
-</script>
+        <script>
+            function sendEmail() {
+                // Get values from the form fields
+                var name = document.getElementById("fname").value;
+                var email = document.getElementById("email").value;
+                var subject = document.getElementById("subject").value;
+                var message = document.getElementById("msg").value;
+        
+                // Construct the mailto URL with the form data
+                var mailtoLink = "mailto:ivanmalong4@gmail.com" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(message);
+        
+                // Redirect to the mailto link
+                window.location.href = mailtoLink;
+            }
+        </script>
 </body>
 
 </html>
