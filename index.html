@@ -333,11 +333,11 @@
                 // Get values from the form fields
                 var name = document.getElementById("fname").value;
                 var email = document.getElementById("email").value;
-                var subject = document.getElementById("subject").value;
+                var subject = document.getElementById("subject").value + " From: " + document.getElementById("subject").value;
                 var message = document.getElementById("msg").value;
         
                 // Construct the mailto URL with the form data
-                var mailtoLink = "mailto:ivanmalong4@gmail.com" + "?subject=" + encodeURIComponent(subject + " - from: " + email) +  "&body=" + encodeURIComponent(message);
+                var mailtoLink = "mailto:ivanmalong4@gmail.com" + "?subject=" + encodeURIComponent(subject) +  "&body=" + encodeURIComponent(message);
         
                 // Redirect to the mailto link
                 window.location.href = mailtoLink;
