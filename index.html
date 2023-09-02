@@ -306,6 +306,9 @@
                                 <!-- Due to more textarea, I got an error so I changed the tag name of this textarea into changeit. -->
                                 <textarea id="msg" cols="30" rows="10" placeholder="Message.." required></textarea>
                             </div>
+                            <div id="success-message" style="display: none;">
+                                <p>Your message has been sent successfully. Thank you!</p>
+                            </div>
                             <div class="button">
                                 <button type="submit">Send message</button>
                             </div>
@@ -334,10 +337,13 @@
                 var message = document.getElementById("msg").value;
         
                 // Construct the mailto URL with the form data
-                var mailtoLink = "mailto:ivanmalong4@gmail.com" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(message);
+                var mailtoLink = "mailto:ivanmalong4@gmail.com" + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(message);
         
                 // Redirect to the mailto link
                 window.location.href = mailtoLink;
+
+                // Show the success message
+                document.getElementById("success-message").style.display = "block";
             }
         </script>
 </body>
